@@ -1,0 +1,289 @@
+{
+	"id": "e28abf91-9b1b-3c41-2898-5cc36a160f69",
+	"name": "Rocketin",
+	"description": "",
+	"order": [
+		"5696b865-f868-377c-38fb-4cffb2d0b6d7",
+		"7090d9d7-5294-a84c-f76a-80e591ca5f1d",
+		"fe7c4137-ac14-ddb8-7cf6-a47e63204544",
+		"595ab1a4-193c-a145-cdcc-081e04c40c03"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1650616265641,
+	"owner": "9302978",
+	"public": false,
+	"requests": [
+		{
+			"id": "5696b865-f868-377c-38fb-4cffb2d0b6d7",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/movies",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "title",
+					"value": "Pesawat Tempur",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "description",
+					"value": "Ini lagu indonesia POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "duration",
+					"value": "03:20",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "artists",
+					"value": "Iwan Fals",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "genres",
+					"value": "POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1650622210989,
+			"name": "Movies Index",
+			"description": "",
+			"collectionId": "e28abf91-9b1b-3c41-2898-5cc36a160f69",
+			"responses": []
+		},
+		{
+			"id": "595ab1a4-193c-a145-cdcc-081e04c40c03",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/movies/5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [
+				{
+					"key": "title",
+					"value": "I Dont Love You",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "description",
+					"value": "Ini lagu Barat POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "duration",
+					"value": "03:20",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "artists",
+					"value": "My Chemical Romance",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "genres",
+					"value": "POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1650621401104,
+			"name": "Movies Update",
+			"description": "",
+			"collectionId": "e28abf91-9b1b-3c41-2898-5cc36a160f69",
+			"responses": []
+		},
+		{
+			"id": "7090d9d7-5294-a84c-f76a-80e591ca5f1d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/movies?search_column=artists&search_text=My",
+			"queryParams": [
+				{
+					"key": "search_column",
+					"value": "artists",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "search_text",
+					"value": "My",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "title",
+					"value": "Pesawat Tempur",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "description",
+					"value": "Ini lagu indonesia POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "duration",
+					"value": "03:20",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "artists",
+					"value": "Iwan Fals",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "genres",
+					"value": "POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1650621689472,
+			"name": "Movies Index with Search",
+			"description": "",
+			"collectionId": "e28abf91-9b1b-3c41-2898-5cc36a160f69",
+			"responses": []
+		},
+		{
+			"id": "fe7c4137-ac14-ddb8-7cf6-a47e63204544",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/movies",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Pesawat Tempur",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "description",
+					"value": "Ini lagu indonesia POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "duration",
+					"value": "03:20",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "artists",
+					"value": "Iwan Fals",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				},
+				{
+					"key": "genres",
+					"value": "POP",
+					"type": "text",
+					"enabled": true,
+					"description": "String"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1650618741889,
+			"name": "Movies Create",
+			"description": "",
+			"collectionId": "e28abf91-9b1b-3c41-2898-5cc36a160f69",
+			"responses": []
+		}
+	]
+}

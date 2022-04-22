@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 1</title>
+  </head>
+  <body>
+    <h1>Challenge 1</h1>
+    <span>Masukkan Waktu Bumi : </span>
+    <input type="text" placeholder="Jam:Menit:Detik" />
+    <br />
+    <div>
+      on earth <span id="earth">00:00:00</span>, on planet Roketin Planet
+      <span id="result">00:00:00</span>
+    </div>
+    <script>
+      var input = document.querySelector("input");
+      var result = document.querySelector("#result");
+      var earth = document.querySelector("#earth");
+      input.addEventListener("keyup", function (e) {
+        earth.innerHTML = input.value;
+        var time = input.value.split(":");
+        result.innerHTML = convertToSeconds(input.value);
+      });
+
+      function convertToSeconds(time) {
+        var timeArray = time.split(":");
+        var seconds = 0;
+        for (var i = 0; i < timeArray.length; i++) {
+          seconds +=
+            parseInt(timeArray[i]) * Math.pow(60, timeArray.length - i - 1);
+        }
+
+        return convertToTime(seconds);
+      }
+
+      function convertToTime(seconds) {
+        var time = "";
+        var hour = Math.floor(seconds / 10000);
+        var minute = Math.floor((seconds - hour * 10000) / 100);
+        var second = seconds - hour * 10000 - minute * 100;
+        if (hour < 10) {
+          time += "0" + hour + ":";
+        } else {
+          time += hour + ":";
+        }
+        if (minute < 10) {
+          time += "0" + minute + ":";
+        } else {
+          time += minute + ":";
+        }
+        if (second < 10) {
+          time += "0" + second;
+        } else {
+          time += second;
+        }
+        return time;
+      }
+    </script>
+  </body>
+</html>
